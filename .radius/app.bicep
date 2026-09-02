@@ -43,7 +43,7 @@ resource rabbitMq 'Radius.Messaging/rabbitMQ@2025-08-01-preview' = {
     environment: environment
     application: aksStoreDemoApp.id
     codeReference: 'docker-compose.yml#L16'
-    password: rabbitMqPassword
+    password: rabbitMqCredentials.id
     queue: 'orders'
     username: 'username'
   }
